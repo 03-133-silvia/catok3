@@ -1,0 +1,163 @@
+/* Reset default margin dan padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Gaya untuk body */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #3B6978, #3B6978); /* Latar belakang galaksi */
+    color: #BCEAD5; /* Warna teks */
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+
+.navbar a {
+    color: #204051;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background 0.3s;
+}
+
+.navbar a:hover {
+    background-color: rgba(233, 69, 96, 0.3);
+    border-radius: 5px;
+}
+
+/* Kontainer */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Heading */
+h1, h2, h3 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Tabel */
+/* Gaya untuk tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    border-radius: 10px; /* Sudut melengkung */
+    overflow: hidden; /* Menghindari overflow pada sudut melengkung */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Bayangan */
+}
+
+/* Gaya untuk header tabel */
+th {
+    background-color: rgba(233, 69, 96, 0.7); /* Warna latar belakang header */
+    color: #ffffff; /* Warna teks header */
+    padding: 15px; /* Padding untuk header */
+    text-align: left; /* Rata kiri */
+    font-weight: bold; /* Tebal untuk header */
+    text-transform: uppercase; /* Huruf kapital */
+}
+
+/* Gaya untuk sel tabel */
+td {
+    padding: 12px; /* Padding for cells */
+    border: 1px solid rgba(0, 102, 120, 0.7); /* Border color with proper rgba syntax */
+    background-color: rgba(255, 255, 255, 0.1); /* Background color for cells */
+    transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+/* Optional: Add hover effect for table cells */
+td:hover {
+    background-color: rgba(232, 224, 225, 0.3); /* Change background color on hover */
+}
+
+/* Efek hover untuk sel tabel */
+tr:hover td {
+    background-color: rgb(12, 48, 63); /* Warna latar belakang saat hover */
+}
+
+/* Gaya untuk baris tabel */
+tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.05); /* Warna latar belakang untuk baris genap */
+}
+
+tr:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.1); /* Warna latar belakang untuk baris ganjil */
+}
+
+/* Daftar */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: #FFFBE6(233, 69, 96, 0.2);
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Gambar */
+img {
+    border-radius: 50%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Bagian Profil */
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+    padding: 20px; /* Padding for inner spacing */
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Stronger shadow for depth */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+}
+
+/* Hover effect for the profile section */
+.profile-section:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+    background-color: rgb(12, 48, 63);
+}
+
+/* Style for the profile image */
+.profile-section img {
+    border-radius: 50%; /* Circular image */
+    width: 150px; /* Image width */
+    height: 150px; /* Image height */
+    border: 4px solid rgba(255, 255, 255, 0.7); /* Border around the image */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow for the image */
+    margin-bottom: 15px; /* Space below the image */
+}
+
+/* Style for the name */
+.profile-section h2 {
+    color: #ffffff; /* Name color */
+    margin: 10px 0; /* Margin for spacing */
+    text-align: center; /* Centered text */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Text shadow for depth */
+}
+
+/* Style for additional information */
+.profile-section h3 {
+    color: #ffffff; /* Color for additional info */
+    margin: 5px 0; /* Margin for spacing */
+    text-align: center; /* Centered text */
+}
